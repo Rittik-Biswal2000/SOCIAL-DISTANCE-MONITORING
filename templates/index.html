@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="stylesheet" href="static\style.css">
+      </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Project</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="static\img\ibm.png" width="50" height="30" class="d-inline-block align-top" alt="">
+          Summer Internship 2020
+        </a>
+        
+        
+      </nav>
+      <br>
+      <p>
+          <br>
+
+      </p>
+      <div class="jumbotron">
+        <h1 class="display-4">Social Distancing Monitoring and Alert System</h1>
+        <p class="lead"></p>
+        <hr class="my-4">
+        <img src="static\img\download.jpg" class="rounded mx-auto d-block" alt="..." height="80%">
+        <h3>An useful application to monitor social distancing</h3>
+        <br>
+        <p>
+          The nCoV 2019 has changed the ways we live our daily lives . Masks and Social Distancing are the new norms . Though the motto is to <span>flatten the curve</span>
+          and <strong>lockdown</strong> emerges as the most viable solution yet it becomes infeasible 
+          to lockdown the country for months at times when majority of people are still dependent on their daily wages
+          for two square meals .  So , as the country opens up and business going back to their usual business
+          we need a comprehensive solution to ensure that we minimise the spread of nCov-2019.<br>
+          Keeping that in mind , I have come up with a unique solution to monitor social distancing norms being followed in public places .<br>
+          This application uses Artificial Intelligence (AI) and alert systems to monitor Social Distancing .</p>
+          <br>
+          <strong><em>How to Use ?</em></strong>
+          <br>
+          <br>
+          <p>
+
+          This application uses <em>Flask</em> on top of python to make the application as user-friendly as possible .<br>
+          Just choose your video file and click on Submit Button , sit back and monitor the social distancing among people while the application 
+          automatically generates an alert system when it detects violations .<br>
+        </p>
+
+          <strong><em>Scope :</em></strong>
+          <br>
+          <br>
+          <p>
+
+
+          This applicaton can easily be integrated with commercial CCTVs and survelliance cameras .<br>
+          For demonstration purpose and physical constraints , this app currently uses video feed from laptop .<br>
+
+        </p>
+        <!--<form action="/forward/" method="post">
+            <button name="forwardBtn" type="submit">Forward</button>
+        </form>-->
+        <br>
+        <br>
+        <div class="container">
+        <form action = "http://localhost:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+    
+        <!--<input type = "submit"/>-->
+        <input class="btn btn-submit" type="submit" value="Submit">
+      </form>
+    </div>
+    <br>
+    <hr>
+
+        <!--<img src="{{ url_for('video_feed') }}">--> 
+        <div class="container">
+          <p>
+            For using real-time live video (Laptop-webcam) click here - <br>
+          </p>
+          <form action="/webcam/" method="post">
+            <button class="btn btn-primary" type="submit">Webcam</button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+    
+    
+</body>
+</html>
