@@ -1,5 +1,4 @@
-# IBM_AI_PROJECT
-Project for IBM Summer Internship 2020
+# SOCIAL DISTANCE MONITORING
 This webapp is build in Flask and helps to monitor social distancing in videos .
 The videos can be from local files(on pc) or video input can be given through webcam of laptop
 If the app detects violation of social distancing norms then an alert sound will be trigerred .
